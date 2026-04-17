@@ -25,13 +25,14 @@ class SecondPage extends StatelessWidget {
         children: [
           Image.network(
             imageUrl,
-            // height: 300,
-            // width: 300,
+            height: 450,
+            width: 500,
             fit: BoxFit.cover,
           ),
           Text('Harga: $price', style: TextStyle(fontSize: 15)),
+          SizedBox(height: 5),
           Text('Nama: $name', style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
-          SizedBox(height: 8),
+          SizedBox(height: 5),
           Text(description, style: TextStyle(fontSize: 14)),
           SizedBox(height: 10),
           ElevatedButton(
